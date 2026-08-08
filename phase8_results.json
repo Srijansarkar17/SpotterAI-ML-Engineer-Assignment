@@ -1,0 +1,56 @@
+{
+  "best_model": "CatBoost (tuned)",
+  "lgb_best_params": {
+    "n_estimators": 441,
+    "learning_rate": 0.02454232810029868,
+    "max_depth": 3,
+    "num_leaves": 34,
+    "min_child_samples": 5,
+    "subsample": 0.696826233573244,
+    "colsample_bytree": 0.6049366979252019,
+    "reg_alpha": 0.00011511963929633976,
+    "reg_lambda": 0.000488881691122105
+  },
+  "lgb_best_cv_rmse_log": 0.1385063709291364,
+  "xgb_best_params": {
+    "n_estimators": 213,
+    "learning_rate": 0.07856207706808228,
+    "max_depth": 3,
+    "min_child_weight": 10,
+    "subsample": 0.6042607529051223,
+    "colsample_bytree": 0.8442300435855443,
+    "reg_alpha": 0.00010229663330970651,
+    "reg_lambda": 0.022334116872958294
+  },
+  "xgb_best_cv_rmse_log": 0.13877226646471236,
+  "cat_best_params": {
+    "iterations": 519,
+    "learning_rate": 0.027113405412010985,
+    "depth": 6,
+    "l2_leaf_reg": 1.2377045247225176
+  },
+  "cat_best_cv_rmse_log": 0.13620458079508987,
+  "all_metrics": {
+    "LightGBM (tuned)": {
+      "rmse_log": 0.14057878306957203,
+      "rmse": 406.4135551496546,
+      "mae": 121.85232916759665,
+      "r2": 0.9290753024233955,
+      "mape": 5.808672195955573
+    },
+    "XGBoost (tuned)": {
+      "rmse_log": 0.13968076519521466,
+      "rmse": 383.3093300901786,
+      "mae": 116.41355369676026,
+      "r2": 0.9369100904943436,
+      "mape": 5.707080886258908
+    },
+    "CatBoost (tuned)": {
+      "rmse_log": 0.13901518437391286,
+      "rmse": 337.60654600323977,
+      "mae": 110.04519133107658,
+      "r2": 0.9510578728471172,
+      "mape": 5.712534395713555
+    }
+  }
+}
